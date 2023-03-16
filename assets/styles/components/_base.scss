@@ -1,7 +1,7 @@
 @import "./../abstract/var";
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: $font;
     min-width: 100vh;
     background: url("./../images/2.jpg") no-repeat;
     background-size: cover;

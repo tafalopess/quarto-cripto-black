@@ -1,5 +1,5 @@
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Sora", sans-serif;
   min-width: 100vh;
   background: url("./../images/2.jpg") no-repeat;
   background-size: cover;
@@ -8,59 +8,93 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  padding: 0.5rem 0;
+  margin: 0 10%;
+  padding: 1rem 0;
 }
 nav .logo {
   color: #EEEEEE;
-  font-size: 1.25rem;
-  font-weight: 800;
-  text-shadow: 0 0 5px #D72323;
-}
-nav ul {
-  display: flex;
-  gap: 1rem;
-}
-nav ul a {
-  text-decoration: none;
-  color: #EEEEEE;
-  font-weight: 800;
-  transition: 0.5s;
-}
-nav ul a:hover {
-  color: #D72323;
-  text-shadow: 0 0 5px #D72323;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
 }
 nav .social-media {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 nav .social-media img {
   width: 35px;
 }
 
 .courses-container {
-  width: 80%;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 }
-.courses-container .courses-title {
-  text-align: center;
+.courses-container .course-description {
+  width: 33%;
+  margin-left: 15rem;
+  color: #EEEEEE;
 }
-
-.carousel {
+.courses-container .course-description h1 {
+  font-size: 3rem;
+  font-family: "Sora", sans-serif;
+  border-bottom: 2px solid #FFD369;
+  padding-bottom: 2rem;
+}
+.courses-container .course-description p {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: #EEEEEE;
+}
+.courses-container .carousel {
   width: 50%;
-  margin: 3rem auto;
+  box-sizing: border-box;
+  height: 600px;
 }
-.carousel .carousel-inner {
-  border-radius: 3rem;
+.courses-container .carousel .carousel-inner {
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 5px solid #222831;
+  border-left: 5px solid #222831;
+  border-bottom: 5px solid #222831;
 }
-.carousel .c-img {
-  border-radius: 3rem;
+.courses-container .carousel .carousel-inner .c-item .c-img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.6);
+}
+.courses-container .carousel .carousel-inner .c-item .carousel-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  bottom: 0;
+}
+.courses-container .carousel .carousel-inner .c-item .carousel-caption h1 {
+  font-size: 2rem;
+  font-family: "Sora", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.courses-container .carousel .carousel-inner .c-item .carousel-caption a {
+  text-decoration: none;
+  background: #222831;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  color: #EEEEEE;
+}
+.courses-container .carousel .carousel-inner .c-item .caption {
+  margin-bottom: 0.8rem;
+}
+.courses-container .carousel .carousel-inner .c-item .caption-2 {
+  padding-bottom: 1.35rem;
+}
+
+.ebooks-container {
+  margin: 5rem 10%;
+  color: #EEEEEE;
 }/*# sourceMappingURL=style.css.map */
