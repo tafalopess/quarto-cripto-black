@@ -1,0 +1,23 @@
+@import "./../abstract/var";
+
+.courses-container {
+    width: 80%;
+    margin: auto;
+    .courses-title {
+        text-align: center;
+    }
+}
+
+
+.carousel {
+    width: 50%;
+    margin: 3rem auto;
+    .carousel-inner{
+        border-radius: 3rem;
+    }
+    .c-img{
+        border-radius: 3rem;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+}

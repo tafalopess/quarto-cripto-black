@@ -1,0 +1,38 @@
+@import "./../abstract/var";
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding: .5rem 0;
+    .logo {
+        color: $fourth-color;
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-shadow: 0 0 5px $third-color;
+    }
+    ul {
+        display: flex;
+        gap: 1rem;
+        a {
+            text-decoration: none;
+            color: $fourth-color;
+            font-weight: 800;
+            transition: .5s;
+        }
+
+        a:hover {
+            color: $third-color;
+            text-shadow: 0 0 5px $third-color;
+        }
+    }
+    .social-media{
+        display: flex;
+        gap: 1rem;
+        img{
+            width: 35px;
+        }
+    }
+}
